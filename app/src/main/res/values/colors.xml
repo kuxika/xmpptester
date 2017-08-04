@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1A7F8E</color>
+    <color name="colorPrimaryDark">#5265B0</color>
+    <color name="colorAccent">#BFE9E3</color>
+    <color name="colorLoginBackground">#9BB7D4</color>
+    <color name="bajaBlue">#5265B0</color>
+    <color name="cerulean">#9BB7D4</color>
+    <color name="pagodaBlue">#1A7F8E</color>
+    <color name="budGreen">#7BB661</color>
+</resources>
