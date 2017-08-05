@@ -34,14 +34,17 @@ public class ConsoleActivity extends AppCompatActivity {
             username = getIntent().getStringExtra("USERNAME");
             password = getIntent().getStringExtra("PASSWORD");
             // create a new String[] array
-            listViewItems_STRING = new String[] {"Bacon", "Eggs", "Potatos", "Waffles", "More", "Food", "Names", "Because", "Scrolling", "Might", "Be", "An", "Issue"};
+            listViewItems_STRING = new String[] {"Got login info"}; //"Eggs", "Potatos", "Waffles", "More", "Food", "Names", "Because", "Scrolling", "Might", "Be", "An", "Issue"
             // create a list from the String[] array
             listViewItems_LIST = new ArrayList<String>(Arrays.asList(listViewItems_STRING));
             // create an ArrayAdapter from the list
             listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listViewItems_LIST);
             listView = (ListView) findViewById(R.id.listView);
+            listViewItems_LIST.add("Username: " + username);
+            listViewItems_LIST.add("Password: " + password);
             listView.setAdapter(listAdapter);
-            //listView.setSelection(listAdapter.getCount() - 1);
+            listViewItems_LIST.add("Now we'll attempt to start a new thread...");
+            
         } else {
             // do nothing
         }
@@ -59,3 +62,5 @@ public class ConsoleActivity extends AppCompatActivity {
 
     }
 }
+
+//listView.setSelection(listAdapter.getCount() - 1);
