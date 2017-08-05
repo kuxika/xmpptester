@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     EditText usernameField;
     EditText passwordField;
     Button loginButton;
-    Intent switchToLoginActivity;
+    Intent switchTo_ConsoleActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
         usernameField = (EditText) findViewById(R.id.usernameField);
         passwordField = (EditText) findViewById(R.id.passwordField);
         loginButton = (Button) findViewById(R.id.login_button);
-        //switchToLoginActivity = new Intent(this, .class); // can also use getBaseContext() in place of "this"
+        switchTo_ConsoleActivity = new Intent(this, ConsoleActivity.class); // can also use getBaseContext() in place of "this"
         loginButton.setOnClickListener(new View.OnClickListener() {
             public void onClick (View view) {
-                //MainActivity.this.startActivity(switchToLoginActivity);
+                MainActivity.this.startActivity(switchTo_ConsoleActivity);
                 // finish(); can kill the activity and prevent user from returning to it
-                usernameField.setVisibility(View.GONE);
-                passwordField.setVisibility(View.GONE);
-                loginButton.setVisibility(View.GONE);
+                //usernameField.setVisibility(View.GONE);
+                //passwordField.setVisibility(View.GONE);
+                //loginButton.setVisibility(View.GONE);
             }
         });
     }

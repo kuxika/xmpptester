@@ -3,4 +3,6 @@
     <string name="loginTitle">Do it, I dare yuh.</string>
     <string name="usernameField">Username</string>
     <string name="loginButton">GO GO GO!</string>
+    <string name="chatHint">Type something...</string>
+    <string name="chatSubmitButton">SUBMIT</string>
 </resources>
